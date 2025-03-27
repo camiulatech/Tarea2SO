@@ -1,0 +1,368 @@
+0,read,Lee datos de un archivo o dispositivo.
+1,write,Escribe datos en un archivo o dispositivo.
+2,open,Abre un archivo.
+3,close,Cierra un archivo.
+4,stat,Obtiene el estado de un archivo.
+5,fstat,Obtiene el estado de un archivo desde un descriptor.
+6,lstat,Obtiene el estado de un archivo simbólico.
+7,poll,Espera eventos en uno o más archivos.
+8,lseek,Establece la posición de lectura/escritura en un archivo.
+9,mmap,Mapea archivos o dispositivos en memoria.
+10,mprotect,Establece permisos de protección de memoria.
+11,munmap,Desasigna una región de memoria mapeada.
+12,brk,Ajusta el final del segmento de datos.
+13,rt_sigaction,Configura la acción para señales específicas.
+14,rt_sigprocmask,Modifica la máscara de señales.
+15,rt_sigreturn,Restablece el contexto después de una señal.
+16,ioctl,Controla dispositivos de entrada/salida.
+17,pread64,Lee datos de un archivo en una posición específica.
+18,pwrite64,Escribe datos en un archivo en una posición específica.
+19,readv,Lee datos en varios buffers.
+20,writev,Escribe datos desde varios buffers.
+21,access,Verifica los permisos de acceso a un archivo.
+22,pipe,Crea un conducto de comunicación (pipe).
+23,select,Espera la disponibilidad de lectura/escritura en archivos.
+24,sched_yield,Cede el uso del procesador.
+25,mremap,Remapea una región de memoria.
+26,msync,Sincroniza un mapeo de memoria con el almacenamiento.
+27,mincore,Consulta qué partes de una página están en memoria.
+28,madvise,Da consejos sobre el uso de memoria.
+29,shmget,Obtiene un segmento de memoria compartida.
+30,shmat,Adjunta un segmento de memoria compartida.
+31,shmctl,Controla un segmento de memoria compartida.
+32,dup,Duplica un descriptor de archivo.
+33,dup2,Duplica un descriptor de archivo a uno específico.
+34,pause,Suspende el proceso hasta que llegue una señal.
+35,nanosleep,Suspende el proceso por un tiempo determinado.
+36,getitimer,Obtiene el valor de un temporizador.
+37,alarm,Programa una alarma de tiempo.
+38,setitimer,Configura un temporizador de intervalo.
+39,getpid,Obtiene el ID del proceso actual.
+40,sendfile,Envía datos de un archivo a un socket.
+41,socket,Crea un punto final de comunicación.
+42,connect,Conecta un socket a una dirección.
+43,accept,Acepta una conexión entrante en un socket.
+44,sendto,Envía un mensaje a través de un socket.
+45,recvfrom,Recibe un mensaje de un socket.
+46,sendmsg,Envía un mensaje a través de un socket.
+47,recvmsg,Recibe un mensaje desde un socket.
+48,shutdown,Cierra un socket.
+49,bind,Vincula un socket a una dirección.
+50,listen,Escucha conexiones en un socket.
+51,getsockname,Obtiene el nombre local de un socket.
+52,getpeername,Obtiene el nombre remoto de un socket.
+53,socketpair,Crea un par de sockets conectados.
+54,setsockopt,Configura opciones de socket.
+55,getsockopt,Obtiene opciones de socket.
+56,clone,Crea un nuevo proceso/hilo.
+57,fork,Crea un nuevo proceso duplicado.
+58,vfork,Crea un proceso hijo compartiendo el espacio de direcciones.
+59,execve,Ejecuta un programa.
+60,exit,Termina el proceso actual.
+61,wait4,Espera el cambio de estado de un proceso hijo.
+62,kill,Envía una señal a un proceso.
+63,uname,Obtiene información sobre el sistema.
+64,semget,Obtiene un conjunto de semáforos.
+65,semop,Realiza operaciones en semáforos.
+66,semctl,Controla operaciones en semáforos.
+67,shmdt,Desconecta un segmento de memoria compartida.
+68,msgget,Obtiene una cola de mensajes.
+69,msgsnd,Envía un mensaje a una cola.
+70,msgrcv,Recibe un mensaje de una cola.
+71,msgctl,Controla una cola de mensajes.
+72,fcntl,Realiza operaciones en descriptores de archivos.
+73,flock,Administra bloqueos de archivos.
+74,fsync,Sincroniza cambios en un archivo.
+75,fdatasync,Sincroniza datos de archivos.
+76,truncate,Cambia el tamaño de un archivo.
+77,ftruncate,Cambia el tamaño de un archivo abierto.
+78,getdents,Lee entradas de un directorio.
+79,getcwd,Obtiene el directorio de trabajo actual.
+80,chdir,Cambia el directorio de trabajo actual.
+81,fchdir,Cambia el directorio de trabajo usando un descriptor de archivo.
+82,rename,Cambia el nombre o mueve un archivo o directorio.
+83,mkdir,Crea un nuevo directorio.
+84,rmdir,Elimina un directorio vacío.
+85,creat,Crea un nuevo archivo.
+86,link,Crea un enlace rígido a un archivo.
+87,unlink,Elimina un archivo o enlace simbólico.
+88,symlink,Crea un enlace simbólico.
+89,readlink,Lee el contenido de un enlace simbólico.
+90,chmod,Cambia los permisos de un archivo.
+91,fchmod,Cambia los permisos de un archivo usando un descriptor.
+92,chown,Cambia el propietario y el grupo de un archivo.
+93,fchown,Cambia el propietario y el grupo usando un descriptor.
+94,lchown,Cambia el propietario y el grupo de un enlace simbólico.
+95,umask,Establece la máscara de permisos para archivos nuevos.
+96,gettimeofday,Obtiene la fecha y la hora del sistema.
+97,getrlimit,Obtiene los límites de recursos del sistema.
+98,getrusage,Obtiene estadísticas de uso de recursos.
+99,sysinfo,Obtiene información sobre el sistema.
+100,times,Obtiene el tiempo del proceso y del sistema.
+101,ptrace,Proporciona un mecanismo para depuración.
+102,getuid,Obtiene el ID de usuario efectivo.
+103,syslog,Controla el registro del sistema.
+104,getgid,Obtiene el ID de grupo efectivo.
+105,setuid,Establece el ID de usuario efectivo.
+106,setgid,Establece el ID de grupo efectivo.
+107,geteuid,Obtiene el ID de usuario efectivo.
+108,getegid,Obtiene el ID de grupo efectivo.
+109,setpgid,Establece el ID de grupo de procesos.
+110,getppid,Obtiene el ID del proceso padre.
+111,getpgrp,Obtiene el ID del grupo de procesos.
+112,setsid,Crea una nueva sesión.
+113,setreuid,Cambia el ID real y efectivo del usuario.
+114,setregid,Cambia el ID real y efectivo del grupo.
+115,getgroups,Obtiene la lista de grupos secundarios.
+116,setgroups,Establece la lista de grupos secundarios.
+117,setresuid,Establece los IDs de usuario real, efectivo y guardado.
+118,getresuid,Obtiene los IDs de usuario real, efectivo y guardado.
+119,setresgid,Establece los IDs de grupo real, efectivo y guardado.
+120,getresgid,Obtiene los IDs de grupo real, efectivo y guardado.
+121,getpgid,Obtiene el ID de grupo de un proceso.
+122,setfsuid,Establece el ID de usuario del sistema de archivos.
+123,setfsgid,Establece el ID de grupo del sistema de archivos.
+124,getsid,Obtiene el ID de sesión de un proceso.
+125,capget,Obtiene capacidades del proceso.
+126,capset,Establece capacidades del proceso.
+127,rt_sigpending,Muestra señales pendientes.
+128,rt_sigtimedwait,Espera señales específicas.
+129,rt_sigqueueinfo,Envía señales con información.
+130,rt_sigsuspend,Suspende el proceso hasta que llegue una señal.
+131,sigaltstack,Establece una pila alternativa para manejar señales.
+132,utime,Cambia los tiempos de acceso y modificación de un archivo.
+133,mknod,Crea un nodo de dispositivo especial.
+134,uselib,Carga una biblioteca compartida.
+135,personality,Establece el comportamiento del proceso.
+136,ustat,Obtiene estadísticas de un sistema de archivos.
+137,statfs,Obtiene estadísticas sobre el sistema de archivos.
+138,fstatfs,Obtiene estadísticas sobre un sistema de archivos usando un descriptor.
+139,sysfs,Obtiene información sobre el sistema de archivos.
+140,getpriority,Obtiene la prioridad de un proceso.
+141,setpriority,Establece la prioridad de un proceso.
+142,sched_setparam,Establece los parámetros de planificación.
+143,sched_getparam,Obtiene los parámetros de planificación.
+144,sched_setscheduler,Establece la política de planificación.
+145,sched_getscheduler,Obtiene la política de planificación.
+146,sched_get_priority_max,Obtiene la prioridad máxima para una política.
+147,sched_get_priority_min,Obtiene la prioridad mínima para una política.
+148,sched_rr_get_interval,Obtiene el intervalo de tiempo de round-robin.
+149,mlock,Bloquea páginas de memoria en RAM.
+150,munlock,Desbloquea páginas de memoria de la RAM.
+151,mlockall,Bloquea todas las páginas del proceso en RAM.
+152,munlockall,Desbloquea todas las páginas del proceso.
+153,vhangup,Simula una desconexión de terminal.
+154,modify_ldt,Modifica la tabla de descriptores locales.
+155,pivot_root,Cambia el punto raíz del sistema de archivos.
+156,_sysctl,Controla parámetros del núcleo en tiempo de ejecución.
+157,prctl,Controla atributos específicos del proceso.
+158,arch_prctl,Establece atributos específicos de la arquitectura.
+159,adjtimex,Ajusta y consulta parámetros de sincronización de tiempo.
+160,setrlimit,Establece límites de recursos.
+161,chroot,Cambia el directorio raíz del proceso.
+162,sync,Sincroniza los cambios de archivos con el almacenamiento.
+163,acct,Habilita o deshabilita el registro de procesos.
+164,settimeofday,Establece la fecha y hora del sistema.
+165,mount,Monta un sistema de archivos.
+166,umount2,Desmonta un sistema de archivos.
+167,swapon,Habilita el intercambio en un dispositivo.
+168,swapoff,Deshabilita el intercambio en un dispositivo.
+169,reboot,Reinicia o apaga el sistema.
+170,sethostname,Establece el nombre de la máquina.
+171,setdomainname,Establece el nombre de dominio de la máquina.
+172,iopl,Cambia el nivel de privilegio de E/S del proceso.
+173,ioperm,Controla el acceso a los puertos de E/S.
+174,create_module,Carga un módulo en el núcleo (obsoleto).
+175,init_module,Inicializa un módulo cargado en el núcleo.
+176,delete_module,Elimina un módulo del núcleo.
+177,get_kernel_syms,Obtiene símbolos del núcleo (obsoleto).
+178,query_module,Consulta información de un módulo (obsoleto).
+179,quotactl,Administra cuotas en el sistema de archivos.
+180,nfsservctl,Controla el servidor NFS.
+181,getpmsg,Obtiene mensajes de una cola STREAMS (obsoleto).
+182,putpmsg,Envía mensajes a una cola STREAMS (obsoleto).
+183,afs_syscall,Llamada al sistema AFS (obsoleta).
+184,tuxcall,Llamada al sistema para el servidor web Tux (obsoleta).
+185,security,Llamada al sistema de seguridad (no utilizada directamente).
+186,gettid,Obtiene el ID de hilo del proceso.
+187,readahead,Precarga datos de un archivo en la caché.
+188,setxattr,Establece un atributo extendido en un archivo.
+189,lsetxattr,Establece un atributo extendido en un enlace simbólico.
+190,fsetxattr,Establece un atributo extendido en un archivo usando un descriptor.
+191,getxattr,Obtiene un atributo extendido de un archivo.
+192,lgetxattr,Obtiene un atributo extendido de un enlace simbólico.
+193,fgetxattr,Obtiene un atributo extendido usando un descriptor.
+194,listxattr,Lista los atributos extendidos de un archivo.
+195,llistxattr,Lista los atributos extendidos de un enlace simbólico.
+196,flistxattr,Lista los atributos extendidos de un archivo usando un descriptor.
+197,removexattr,Elimina un atributo extendido de un archivo.
+198,lremovexattr,Elimina un atributo extendido de un enlace simbólico.
+199,fremovexattr,Elimina un atributo extendido usando un descriptor.
+200,tkill,Envía una señal a un hilo específico.
+201,time,Obtiene la hora actual.
+202,futex,Sistema de sincronización de hilos.
+203,sched_setaffinity,Establece la afinidad de CPU para un proceso.
+204,sched_getaffinity,Obtiene la afinidad de CPU de un proceso.
+205,set_thread_area,Establece el área de datos TLS para el proceso.
+206,io_setup,Crea un contexto de E/S asíncrono.
+207,io_destroy,Destruye un contexto de E/S asíncrono.
+208,io_getevents,Recibe eventos de E/S asíncrona.
+209,io_submit,Envía solicitudes de E/S asíncrona.
+210,io_cancel,Cancela solicitudes de E/S asíncrona.
+211,get_thread_area,Obtiene el área de datos TLS.
+212,lookup_dcookie,Resuelve un identificador de cookie en una ruta.
+213,epoll_create,Crea un descriptor epoll.
+214,epoll_ctl_old,Control epoll (obsoleto).
+215,epoll_wait_old,Espera eventos en epoll (obsoleto).
+216,remap_file_pages,Remapea páginas de archivo en memoria.
+217,getdents64,Lee entradas de directorio (64 bits).
+218,set_tid_address,Establece la dirección de almacenamiento de ID de hilo.
+219,restart_syscall,Reinicia una llamada al sistema interrumpida.
+220,semtimedop,Operaciones en semáforos con tiempo de espera.
+221,fadvise64,Proporciona consejos sobre el acceso a archivos.
+222,timer_create,Crea un nuevo temporizador POSIX.
+223,timer_settime,Establece el valor y el intervalo de un temporizador.
+224,timer_gettime,Obtiene el valor restante de un temporizador.
+225,timer_getoverrun,Obtiene el número de veces que se ha sobrepasado un temporizador.
+226,timer_delete,Elimina un temporizador POSIX.
+227,clock_settime,Establece el tiempo de un reloj específico.
+228,clock_gettime,Obtiene el tiempo actual de un reloj.
+229,clock_getres,Obtiene la resolución de un reloj.
+230,clock_nanosleep,Duerme durante un tiempo específico usando un reloj.
+231,exit_group,Finaliza el grupo de procesos.
+232,epoll_wait,Espera eventos en un descriptor epoll.
+233,epoll_ctl,Controla eventos epoll en un descriptor.
+234,tgkill,Envía una señal a un hilo en un grupo de tareas.
+235,utimes,Establece los tiempos de acceso y modificación de un archivo.
+236,vserver,Virtualización de servidores (obsoleto).
+237,mbind,Asigna una política de memoria a un rango de direcciones.
+238,set_mempolicy,Establece la política de memoria para un proceso.
+239,get_mempolicy,Obtiene la política de memoria actual.
+240,mq_open,Abre una cola de mensajes POSIX.
+241,mq_unlink,Elimina una cola de mensajes POSIX.
+242,mq_timedsend,Envía un mensaje a una cola con tiempo de espera.
+243,mq_timedreceive,Recibe un mensaje de una cola con tiempo de espera.
+244,mq_notify,Configura notificación de mensajes en una cola.
+245,mq_getsetattr,Obtiene o establece atributos de una cola de mensajes.
+246,kexec_load,Carga un nuevo núcleo para reemplazar el actual.
+247,waitid,Espera cambios de estado en un proceso específico.
+248,add_key,Agrega una clave a la clave del núcleo.
+249,request_key,Obtiene una clave desde el núcleo.
+250,keyctl,Realiza operaciones en claves del núcleo.
+251,ioprio_set,Establece la prioridad de E/S para un proceso.
+252,ioprio_get,Obtiene la prioridad de E/S de un proceso.
+253,inotify_init,Inicializa un objeto de notificación de archivos.
+254,inotify_add_watch,Agrega un monitor a un archivo o directorio.
+255,inotify_rm_watch,Elimina un monitor de un archivo o directorio.
+256,migrate_pages,Migra páginas de memoria a otros nodos.
+257,openat,Abre un archivo relativo a un directorio.
+258,mkdirat,Crea un directorio relativo a un descriptor.
+259,mknodat,Crea un archivo especial relativo a un descriptor.
+260,fchownat,Cambia el propietario de un archivo relativo a un descriptor.
+261,futimesat,Cambia los tiempos de un archivo relativo a un descriptor.
+262,newfstatat,Obtiene información de estado relativa a un descriptor.
+263,unlinkat,Elimina un archivo o directorio relativo a un descriptor.
+264,renameat,Cambia el nombre de un archivo relativo a un descriptor.
+265,linkat,Crea un enlace rígido relativo a un descriptor.
+266,symlinkat,Crea un enlace simbólico relativo a un descriptor.
+267,readlinkat,Lee el contenido de un enlace simbólico relativo a un descriptor.
+268,fchmodat,Cambia los permisos de un archivo relativo a un descriptor.
+269,faccessat,Verifica los permisos de un archivo relativo a un descriptor.
+270,pselect6,Espera múltiples descriptores de archivo con señales.
+271,ppoll,Espera eventos en múltiples descriptores de archivo.
+272,unshare,Desasocia recursos compartidos en un proceso.
+273,set_robust_list,Configura una lista de mutex robustos.
+274,get_robust_list,Obtiene una lista de mutex robustos.
+275,splice,Transfiere datos entre dos descriptores de archivo.
+276,tee,Copia datos entre dos conductos (pipes).
+277,sync_file_range,Sincroniza un rango de un archivo con el almacenamiento.
+278,vmsplice,Adjunta un búfer de memoria a un conducto (pipe).
+279,move_pages,Mueve páginas de memoria a nodos específicos.
+280,utimensat,Establece los tiempos de acceso y modificación de un archivo.
+281,epoll_pwait,Espera eventos epoll con una máscara de señales.
+282,signalfd,Crea un descriptor para recibir señales.
+283,timerfd_create,Crea un temporizador que se puede leer como un archivo.
+284,eventfd,Crea un descriptor para eventos de contador.
+285,fallocate,Reserva espacio en un archivo.
+286,timerfd_settime,Configura el tiempo de un temporizador.
+287,timerfd_gettime,Obtiene el tiempo restante de un temporizador.
+288,accept4,Acepta una conexión en un socket con opciones adicionales.
+289,signalfd4,Crea un descriptor de archivo para señales (nueva interfaz).
+290,eventfd2,Crea un descriptor de archivo para eventos (nueva interfaz).
+291,epoll_create1,Crea un descriptor epoll con opciones.
+292,dup3,Duplica un descriptor de archivo con opciones adicionales.
+293,pipe2,Crea una tubería con opciones adicionales.
+294,inotify_init1,Inicializa un objeto inotify con opciones.
+295,preadv,Lee datos desde un archivo a múltiples buffers.
+296,pwritev,Escribe datos desde múltiples buffers en un archivo.
+297,rt_tgsigqueueinfo,Envía señales con información a un hilo específico.
+298,perf_event_open,Abre un contador de eventos de rendimiento.
+299,recvmmsg,Recibe múltiples mensajes desde un socket.
+300,fanotify_init,Inicializa una instancia de fanotify.
+301,fanotify_mark,Establece marcas en fanotify.
+302,prlimit64,Establece o obtiene los límites de recursos de un proceso.
+303,name_to_handle_at,Obtiene el identificador de un archivo por nombre.
+304,open_by_handle_at,Abre un archivo mediante su identificador.
+305,clock_adjtime,Ajusta el tiempo del reloj.
+306,syncfs,Sincroniza los datos de un sistema de archivos con el almacenamiento.
+307,sendmmsg,Envía múltiples mensajes desde un socket.
+308,setns,Une el proceso a un nuevo espacio de nombres.
+309,getcpu,Obtiene el número de CPU actual y el nodo NUMA.
+310,process_vm_readv,Lee datos desde el espacio de direcciones de otro proceso.
+311,process_vm_writev,Escribe datos en el espacio de direcciones de otro proceso.
+312,kcmp,Compara dos descriptores de archivo.
+313,finit_module,Carga un módulo desde un archivo.
+314,sched_setattr,Establece atributos de planificación de tareas.
+315,sched_getattr,Obtiene atributos de planificación de tareas.
+316,renameat2,Cambia el nombre de un archivo con opciones adicionales.
+317,seccomp,Establece políticas de filtro de llamadas al sistema.
+318,getrandom,Genera números aleatorios seguros.
+319,memfd_create,Crea un descriptor de archivo en memoria.
+320,kexec_file_load,Carga un núcleo desde un archivo para reinicio.
+321,bpf,Realiza operaciones con filtros de paquetes Berkeley (BPF).
+322,execveat,Ejecuta un programa relativo a un directorio.
+323,userfaultfd,Crea un descriptor de archivo para manejo de fallas de página.
+324,membarrier,Sinc. de memoria entre núcleos del procesador.
+325,mlock2,Bloquea páginas de memoria en RAM con opciones.
+326,copy_file_range,Copia datos directamente entre archivos.
+327,preadv2,Lee datos desde múltiples buffers en una posición específica.
+328,pwritev2,Escribe datos desde múltiples buffers en una posición específica.
+329,pkey_mprotect,Cambia los permisos de una región de memoria protegida por clave.
+330,pkey_alloc,Asigna una clave de protección de memoria.
+331,pkey_free,Libera una clave de protección de memoria.
+332,statx,Obtiene información extendida de un archivo.
+333,io_pgetevents,Obtiene eventos de E/S asíncrona con prioridad.
+334,rseq,Soporte para secuencias reiniciables.
+424,pidfd_send_signal,Envía una señal a un proceso usando un descriptor de PID.
+425,io_uring_setup,Configura una instancia de IO uring.
+426,io_uring_enter,Entra en el contexto de IO uring para procesar eventos.
+427,io_uring_register,Registra recursos en una instancia de IO uring.
+428,open_tree,Abre una vista de árbol de un punto de montaje.
+429,move_mount,Mueve un punto de montaje a otro lugar.
+430,fsopen,Inicia una nueva instancia de sistema de archivos.
+431,fsconfig,Configura un sistema de archivos montado.
+432,fsmount,Monta un sistema de archivos previamente configurado.
+433,fspick,Selecciona un punto de montaje.
+434,pidfd_open,Abre un descriptor de archivo para un proceso dado.
+435,clone3,Crea un nuevo proceso/hilo con parámetros extendidos.
+436,close_range,Cierra un rango de descriptores de archivo.
+437,openat2,Abre un archivo en un directorio relativo con más opciones.
+438,pidfd_getfd,Obtiene un descriptor de archivo desde un proceso.
+439,faccessat2,Verifica los permisos de acceso a un archivo con más opciones.
+440,process_madvise,Ofrece consejos sobre el uso de memoria de un proceso.
+441,epoll_pwait2,Espera eventos epoll con un tiempo límite.
+442,mount_setattr,Establece atributos en un montaje.
+443,quotactl_fd,Controla cuotas usando un descriptor de archivo.
+444,landlock_create_ruleset,Crea un conjunto de reglas de seguridad de Landlock.
+445,landlock_add_rule,Agrega una regla al conjunto de reglas de Landlock.
+446,landlock_restrict_self,Restringe el acceso de un proceso usando Landlock.
+447,memfd_secret,Crea una región de memoria secreta.
+448,process_mrelease,Libera recursos asociados a un proceso terminado.
+449,futex_waitv,Espera en múltiples futexes.
+450,set_mempolicy_home_node,Establece el nodo de memoria preferido.
+451,cachestat,Obtiene estadísticas de caché de archivos.
+452,fchmodat2,Cambia los permisos de un archivo relativo con más opciones.
+453,map_shadow_stack,Mapea una pila de sombra para protección.
+454,futex_wake,Despierta hilos en espera en un futex.
+455,futex_wait,Espera en un futex hasta que cambie.
+456,futex_requeue,Despierta o reordena hilos esperando en un futex.
